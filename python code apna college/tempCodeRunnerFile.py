@@ -1,0 +1,1 @@
+      # self.percentange =str((self.phy +self.math +self.chem)/3) + "%"
