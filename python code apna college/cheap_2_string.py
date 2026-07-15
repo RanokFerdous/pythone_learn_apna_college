@@ -28,17 +28,21 @@ print(final_str)
 str="Apna_college"  # str[0]=A , str[2]=n
 ch =str[0]
 print(ch)   # A
-# ******not allow  str[0]=p    ,  new value can added,
+# ******not allow  str[0]=p    ,  new value can added,  cant' change ...
+#=============topic : slicing           
 
 print( str[1:4]) # pna   . last index can't include.
 print( str[ :4])   # means: [0:4]
-print( str [1: ])   # means: [1:len(str)]
+print( str [1: ])   # means: [1:len(str)]  # college
 print( str[ 5:len(str)])
+#=========================
+# topic: Negative indexing 
 
 # **special case of string . can run in backward indexing from  -5 -4 -3 -2 -1
 str1="apple"
 print( str1[-3: -1])  # pl
-
+#===================
+ 
 # some string function leanr
 str='i am studying python from Apnacollege'
 #1. str.endswith ( "ege")
@@ -110,3 +114,11 @@ else:
     print( "c is greatest")
 
 #=======================
+
+#question : take a number and check   it is multiply of 7 or not. 
+x= int ( input( "enter number: "))
+if (x % 7 ==0) 
+    print ( "Multiple of 7")
+else:
+    print ("not multiple of 7")
+    
