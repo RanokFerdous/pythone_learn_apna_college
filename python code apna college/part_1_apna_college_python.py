@@ -25,6 +25,11 @@ price=40
 print( type(name))  # <class 'str'>
 print(type(price))  # <class 'int'>
 
+# can print 
+name1 = "sk"
+name2 = 'sk'
+name3 ='''sk'''
+
 # ------------------------------------
 age=23
 old=True
