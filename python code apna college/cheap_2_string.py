@@ -28,7 +28,7 @@ print(final_str)
 str="Apna_college"  # str[0]=A , str[2]=n
 ch =str[0]
 print(ch)   # A
-# ******not allow  str[0]=p
+# ******not allow  str[0]=p    ,  new value can added,
 
 print( str[1:4]) # pna   . last index can't include.
 print( str[ :4])   # means: [0:4]
