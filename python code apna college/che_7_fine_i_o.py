@@ -45,7 +45,8 @@ f.close()
 # diff mode of operation
 
 # 'r'   open for reading ( default)
-# 'w'  open fo writing ,truncation the file first. ( : all previous text will be deleted and new text will be stored here.)
+# 'w'  open fo writing ,truncation the file first.
+#( : all previous text will be deleted and new text will be stored here.)
 
 # 'x'  : create a new file and open it for writing.
 
@@ -177,7 +178,7 @@ f.close()
 
 # w+  =  read + override ,  ( truncate : delete all data from demo.txt file )
 
-#  a+  = read + append data . ( pointer from end . not truncate. )
+#  a+  = read + append data . (  pointer from end . not truncate. )
 
 #============================
 
@@ -279,10 +280,9 @@ check_for_word()  # call the fnx.
 
 #==========================
 
-#qs1: "WAF " to find in which line of the file does the word "learning" occur first. print -1 if word not found.
-
+#qs1: "WAF " to find in which line of the file does the
+#  word "learning" occur first. print -1 if word not found.
 # ans:
-
 # now , we read line by line :
 
 def check_for_line():
@@ -341,6 +341,8 @@ with open ("practice.txt","r") as f:
 
 #ans: print all indivisual number using these basic code.
 
+
+# qs 2:  from a file containing numbers separated by comma, print the count of even numbers.
 #with split
 
 with open("practice.txt","r") as f:
@@ -354,8 +356,6 @@ with open("practice.txt","r") as f:
     #ans: ['1', '2', '76', '84', '90', '101']
 
     # now typecast in integer
-
-
 # check odd or even
 
 count =0
@@ -364,7 +364,7 @@ with open("practice.txt","r") as f:
     data=f.read()
 
     num= data.split(",")
-    print(num)
+    print(num)   # ['1', '2', '76', '84', '90', '101']
 
     for val in num:
         if(int(val)% 2==0):
