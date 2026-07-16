@@ -12,16 +12,18 @@ info= {
     "learning" : "coding",
     "age": 52,
     "is_adult": True,
+    "topics" : ("dict","set"),        # that is a tuple
     "marks": 94.4,
     12.32:23,
     "topic" :  ("dict", "set")   # that is a tuples
 }
 
 #print ( info)
-#ans: {'key': 'value', 'name': 'apnacollege', 'subject': ['python', 'c', 'java'], 'learning': 'coding', 'age': 52, 'is_adult': True, 'marks': 94.4, 'topic': ('dict', 'set')}
+#ans: {'key': 'value', 'name': 'apnacollege', 'subject': ['python', 'c', 'java'], 
+ 'learning': 'coding', 'age': 52, 'is_adult': True, 'marks': 94.4, 'topic': ('dict', 'set')}
 
 print ( type( info))  #ans:  <class 'dict'>
-
+ 
 print(info["learning"])
 print(info["is_adult"])
 
@@ -43,6 +45,7 @@ print(document["id"])  # ans: 34
 
 document["name"]="ranok"  # add a new key name
 print(document)
+document ["surename"] ="ferdous"  #  add a new key value pair 
 
 
 # create null dictonary
