@@ -1,4 +1,4 @@
-#Cheapter : 03  Lists and Tuples
+ #Cheapter : 03  Lists and Tuples
 
 # list and Tuples  are almost same as : array
 
@@ -108,6 +108,12 @@ print( type(tup2))  #ans:  <class 'tuple'>
 tup3=( 1)  # if not give (,) then take type as int.
 print( type( tup3))  # ans: <class 'int'>
 print( tup3)  # ans: 1
+
+tup = ( 2,1,3,1)
+print(tup[0]) 
+print(tup [1])
+
+#not allowed  tup[0]= 9    
 
 
 
