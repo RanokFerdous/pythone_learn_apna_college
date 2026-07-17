@@ -4,12 +4,11 @@
 #TOPIC: 03
 
 #INHERITANCE:  -> when one class (child/ derived) derives the properties & methods of another class ( parents/ base)
-
 # EXAMPLE: 01
-
 class Car:
     color="red"
-    #qs1: WHY USE  static method here?
+    #qs1: WHY USE  static method here? 
+    #ans:  so don't need to write self 
     @staticmethod
     def start():
         print("car started..")
@@ -291,10 +290,7 @@ print(stu1.percentange)  #ans:73.66666666666667%
 #EXPLAIN: ** We use @property decorator on any method in the class to use the method as a property.
 
 #  if an attribute value - > depend on function , then :  we can create this function , to a : property/ attribute .
-
 #so, way:
-
-
 class Student3:
     def __init__(self,phy,chem,math):
         self.phy=phy
@@ -306,8 +302,6 @@ class Student3:
     @property
     def percentage(self):
         return   str((self.phy +self.math +self.chem)/3) + "%"
-
-
 
 stu1 =Student3(98,92,95)
 print(stu1.percentage) #ans: 95.0%
