@@ -156,14 +156,13 @@ print (Student5.college_name)
 #creating class
 
 class Student6:
-
-    # **class attribute use: ( use this when something is common for every one )
+ # **class attribute use: ( use this when something 
+    # is common for every one )
     college_name ="ABC college"
     #CONSTRUCTOR
     def __init__( self, name,marks):
         self.name= name   # obj attr
         self.marks=marks  # obj attr
-
 
     #METHOD
     def hello(self):
@@ -196,14 +195,13 @@ print( s1.get_college_name())  # ans: ABC college
 # ans: for initialize parameter
 
 # ======================================
-# question 1: create student class that takes name & marks of 3 subjects as arguments in constructor . Then create a method to print the average .
-
+# question 1: create student class that takesname & marks of 
+#  3 subjects as arguments in constructor . Then create a method to print the average .
 # ans:
 
 class student:
 
     #constructor
-
     def __init__ ( self, name, marks):  # marks is list
         self.name= name
         self.marks=marks
@@ -217,6 +215,9 @@ class student:
         print("hi", self.name,"your avg score is : ", sum/3)
 s1= student("tony stark",[99,98,97])
 s1.get_avg()  #ans:hi tony stark your avg score is :  98.0
+# can chnage attribute value
+s1.name ="ironman"
+s1.get_avg() 
 
 
 # ==============================================
@@ -273,7 +274,8 @@ s1.hello()  # ans :in static method :ABC college
 # time: 8:36:00
 # topic: Abstraction & Encapsulation
 
-# Abstraction: Hiding the implementation details of a class and only showing the essential features to the user.
+# Abstraction: Hiding the implementation details of a class 
+#  and only showing the essential features to the user.
 
 #abstraction:
 
@@ -311,8 +313,8 @@ car1.start()  # this line is necessary part
 
 
 # Let's practice :
-# qs1: Create Account class with 2 attribute - balance & account no .  Create methods for debit, credit & printing the balance.
-
+# qs1: Create Account class with 2 attribute - balance & account no .
+#Create methods for debit, credit & printing the balance. 
 class Account:
     def __init__ (self,bal,acc):
         self.balance=bal
@@ -323,12 +325,12 @@ class Account:
         # self is point to acc1 and amount is new variable which i declare
         self.balance-= amount
         print("Rs.", amount,"was debited")
-
+        print ( "total balance = ", self.get_balance())
     #credit method: for add some amount
     def credit ( self,amount):
         self.balance+= amount
         print("Rs.", amount,"was credited")
-
+        print ( "total balance = ", self.get_balance())
     #return balance
     def get_balance(self):
          # self point to the acc1 obj.
