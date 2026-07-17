@@ -4,7 +4,8 @@
 
 #explain: when the same operator is allowed to have different meaning according to the context.
 
-#poly->means: many   morphism: form
+#poly->means: many  .
+#  morphism: form
 # means:  many form
 
 # HOWEWORK: ******getter and setter  decorator.
@@ -168,12 +169,9 @@ engg1.showDetails()
  #ans:  role : Engineer dept: IT salaray:  75000
 
 #==============================
-
 #QS3: Create a class called Order which stores item & its price
-
 # Use Dunder fucntion __gt__() to convey that:
 # order1 > order2  if price of order1> price of order2
-
 #ans:
 
 class  Order:
@@ -187,5 +185,4 @@ class  Order:
 
 order1= Order("chips",23)
 order2 =Order("tea", 10)
-
 print(order1>order2) # ans: True
