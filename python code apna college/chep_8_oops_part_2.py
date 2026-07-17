@@ -71,13 +71,10 @@ print( acc1.get_balance())
 # topic: 1: del keyword
 
 # ==> used to delete object properties or object itself.
-
 # example:  del s1.name   => for delete properties
 #           del  s1     => for delete object .
 
-
 # example : 01 of delete
-
 class Student1:
     def __init__ (self,name):
         self.name=name
@@ -88,16 +85,16 @@ del s1  # delete s1 obj
 # print(s1)  #  ans: give error , because already deleted.
 
 #====================PRIVATE ===================
-
-
 # TOPIC: PRIVATE ( like) attribute & method
 
 # Conceptual implementation in Python
 
-# explain:  PRIVATE ( like) attribute & method are:  meant to be used only within the class and are not accessible from outside the class.
+# explain:  PRIVATE ( like) attribute & method are:  
+# meant to be used only within the class and are not accessible from outside the class.
 
 #qs1: how to declare private ?
-# ans: use double underscore( __) : at  starting position of any variable which we want to declare as private.
+# ans: use double underscore( __) : at  starting position of
+# any variable which we want to declare as private.
 
 class Account1:
     def __init__( self, acc_no,acc_pass):
@@ -114,7 +111,7 @@ class Account1:
 acc1 =Account1("12345","abacds")
 
 print(acc1.acc_no) # ans: 12345
-
+# print ( acc1.__acc_pass )  -> it will give error.
 print(acc1.reset_pass())  # ans: abacds  None
 
 # NOTE: why None print , don't know?
