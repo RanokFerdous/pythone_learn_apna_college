@@ -75,7 +75,6 @@ print(res)
 #  create this as a string using  .join
 # .join : concatenation the all character .
 
-
 password1 = "".join ([random.choice(charValues)  for i in range(length)])
 
 print(password1)  #ans: 7MQ7ZF~w"Z
